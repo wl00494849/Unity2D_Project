@@ -47,7 +47,7 @@ public class Weapon : Collidable
                 origin = transform.position,
                 pushForce = pushForce[weaponLevel]
             };
-
+            //Fighter
             coll.SendMessage("ReceiveDamage", dmg);
         }
     }

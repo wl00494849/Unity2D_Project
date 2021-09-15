@@ -2648,7 +2648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5fb688b6dcdd6446a741307231adc44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 0
+  hitPoint: 1
   maxHitPoint: 10
   pushRecoverySpead: 0.2
 --- !u!212 &553409420
@@ -3654,7 +3654,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 0
+  damage: 1
   pushForce: 3
 --- !u!1 &1213424819
 GameObject:
@@ -7693,6 +7693,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1887014603426306276, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8973078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887014603426306276, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0319171
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887014603426306276, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.012074679
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887014603426306276, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.015958548
+      objectReference: {fileID: 0}
     - target: {fileID: 3651175724468678428, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
       propertyPath: hitPoint
       value: 10
@@ -7760,6 +7776,22 @@ PrefabInstance:
     - target: {fileID: 3651175724468678432, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
       propertyPath: m_Name
       value: SmallEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863042252667638862, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.10065723
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863042252667638862, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16059004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863042252667638862, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8863042252667638862, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0018
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 569ba6e60d0661c43bd2e2150f97d7ae, type: 3}

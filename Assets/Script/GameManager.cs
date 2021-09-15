@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GameDataModel;
-using Newtonsoft;
 
 public class GameManager : MonoBehaviour
 {
@@ -62,7 +61,13 @@ public class GameManager : MonoBehaviour
 
         var loadData = JsonUtility.FromJson<SaveModel>(PlayerPrefs.GetString("SaveState"));
         coin = loadData.coin;
+        //Experience
         experience = loadData.xp;
+        if (GetCurrentLevel() != 1)
+        {
+            player.SetLevel(GetCurrentLevel());
+        }
+        //Cheage weapon Level
         weapon.SetWeaponLevel(loadData.weaponLevel);
 
     }
@@ -127,5 +132,6 @@ public class GameManager : MonoBehaviour
     public void OnLevelUp()
     {
         Debug.Log("Level UP");
+        player.OnLevelUp();
     }
 }

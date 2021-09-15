@@ -11,7 +11,7 @@ public class EnemyHitBox : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
-        if (coll.tag == "Fighter" && coll.name == "Player")
+        if (coll.tag == "Fighter" && coll.name == "player_0")
         {
             Damage dmg = new Damage
             {
@@ -19,8 +19,8 @@ public class EnemyHitBox : Collidable
                 origin = transform.position,
                 pushForce = pushForce
             };
-
-            coll.SendMessage("RecevieDamage",dmg);
+            //Fighter
+            coll.SendMessage("ReceiveDamage",dmg);
         }
     }
 }
