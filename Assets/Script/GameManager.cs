@@ -70,6 +70,9 @@ public class GameManager : MonoBehaviour
         //Cheage weapon Level
         weapon.SetWeaponLevel(loadData.weaponLevel);
 
+        Debug.Log(GameObject.Find("SpawnPoint").transform.position);
+
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
     //Upgrade Weapon
     public bool TryUpgradeWeapon()

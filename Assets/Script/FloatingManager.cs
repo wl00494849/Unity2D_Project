@@ -9,6 +9,10 @@ public class FloatingManager : MonoBehaviour
     public GameObject textPrefab;
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     private void Update()
     {
         foreach (var txt in floatingTexts)
@@ -27,6 +31,8 @@ public class FloatingManager : MonoBehaviour
         floatingTxt.go.transform.position = Camera.main.WorldToScreenPoint(position);
         floatingTxt.motion = motion;
         floatingTxt.duration = duration;
+
+        Debug.Log("true1");
 
         floatingTxt.Show();
     }
